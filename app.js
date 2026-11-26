@@ -15,7 +15,7 @@ let D = JSON.parse(JSON.stringify(DEF));
 let isAdmin = sessionStorage.getItem("adm") === "1";
 let atab = "site", lessonTab = "ly-thuyet";
 /* Dán link Web app của Google Apps Script vào giữa hai dấu ngoặc kép */
-const API = "";
+const API = "https://script.google.com/macros/s/AKfycbwTTfhe4_hWyrph3KqzoFK-In0JTW3xq5eVRa-YZqBsL7yYAP1SuLzqTAagvXXirVqmUQ/exec";
 let who = JSON.parse(sessionStorage.getItem("who") || "null"), after = null;
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
